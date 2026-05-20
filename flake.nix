@@ -9,7 +9,10 @@
   outputs = { self, nixpkgs, flake-utils }:
     flake-utils.lib.eachDefaultSystem (system:
       let
-        pkgs = nixpkgs.legacyPackages.${system};
+        pkgs = import nixpkgs {
+          inherit system;
+          config.allowUnfree = true;
+        };
         
         # Platform mapping for Antigravity manifests
         platformMap = {
@@ -29,7 +32,7 @@
         
         # Platform-specific hashes (updated automatically by CI)
         hashes = {
-          "x86_64-linux" = "sha512-XM3MAfu4Y36OVkc8bJXbp1/tT9KiQiANgPzEx/q4EbczX1p/slMyEwqtKY5yYn4QGOaRGlZY9PBZ7wYaHyEZcg==";
+          "x86_64-linux" = "sha512-XM3MAfuGPH6OVkc8bJXbp1/tT9KiQiANgM/Ex/q4Ebcz9af6slMyEwqtKY5yYn4QGOaRGlZY9PBZ724BnyEZcg==";
           "aarch64-linux" = "";  # Will be populated when available
           "x86_64-darwin" = "";  # Will be populated when available
           "aarch64-darwin" = ""; # Will be populated when available
