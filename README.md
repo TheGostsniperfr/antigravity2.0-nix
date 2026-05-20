@@ -1,5 +1,9 @@
 # Antigravity 2.0 Nix Flake
 
+[![CI](https://github.com/YOUR_USERNAME/antigravity-flake/workflows/CI/badge.svg)](https://github.com/YOUR_USERNAME/antigravity-flake/actions)
+[![Update](https://github.com/YOUR_USERNAME/antigravity-flake/workflows/Update%20Antigravity%20Version/badge.svg)](https://github.com/YOUR_USERNAME/antigravity-flake/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A professional Nix flake for [Antigravity 2.0](https://antigravity.google), Google's next-generation development CLI tool.
 
 ## Features
