@@ -25,5 +25,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Implemented SHA-512 checksum verification for all downloads
 - Using official Google Cloud Storage sources only
 
-[Unreleased]: https://github.com/USERNAME/REPO/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/USERNAME/REPO/releases/tag/v1.0.0
+[Unreleased]: https://github.com/TheGostsniperfr/antigravity2.0-nix/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/TheGostsniperfr/antigravity2.0-nix/releases/tag/v1.0.0

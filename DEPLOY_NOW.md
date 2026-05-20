@@ -11,9 +11,9 @@ Create a new repository on GitHub with your preferred name (e.g., `antigravity-n
 ### 2. Update Repository URLs
 
 ```bash
-# Replace USERNAME/REPO with your actual GitHub username and repo name
+# Replace TheGostsniperfr/antigravity2.0-nix with your actual GitHub username and repo name
 # Example: bperret/antigravity-nix
-find . -type f -name "*.md" -exec sed -i 's|USERNAME/REPO|your-username/your-repo|g' {} +
+find . -type f -name "*.md" -exec sed -i 's|TheGostsniperfr/antigravity2.0-nix|your-username/your-repo|g' {} +
 
 git add -A
 git commit -m "chore: update repository URLs"
@@ -23,7 +23,7 @@ git commit -m "chore: update repository URLs"
 
 ```bash
 # Add remote
-git remote add origin https://github.com/USERNAME/REPO.git
+git remote add origin https://github.com/TheGostsniperfr/antigravity2.0-nix.git
 
 # Push
 git push -u origin main
@@ -36,18 +36,20 @@ git push origin v1.0.0
 ### 4. Configure GitHub Actions
 
 Go to **Settings → Actions → General**:
+
 - Workflow permissions: "Read and write permissions"
 - ✓ Allow GitHub Actions to create and approve pull requests
 
 ### 5. Test Installation
 
 ```bash
-nix run github:USERNAME/REPO -- --version
+nix run github:TheGostsniperfr/antigravity2.0-nix -- --version
 ```
 
 ## ✅ Done!
 
 Your flake is now:
+
 - ✓ Live on GitHub
 - ✓ Installable by anyone
 - ✓ Auto-updating every 7 days

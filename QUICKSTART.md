@@ -22,7 +22,7 @@ Restart your terminal.
 Run Antigravity without installing:
 
 ```bash
-nix run github:USERNAME/REPO -- --version
+nix run github:TheGostsniperfr/antigravity2.0-nix -- --version
 ```
 
 ## Install
@@ -30,7 +30,7 @@ nix run github:USERNAME/REPO -- --version
 Install to your user profile:
 
 ```bash
-nix profile install github:USERNAME/REPO
+nix profile install github:TheGostsniperfr/antigravity2.0-nix
 ```
 
 Verify:
@@ -78,5 +78,5 @@ nix profile remove antigravity
 
 ## Need Help?
 
-- [Open an issue](https://github.com/USERNAME/REPO/issues)
+- [Open an issue](https://github.com/TheGostsniperfr/antigravity2.0-nix/issues)
 - Check [Troubleshooting](docs/SETUP.md#troubleshooting)

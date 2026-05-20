@@ -1,18 +1,24 @@
 # Antigravity 2.0 Nix Flake
 
-[![CI](https://github.com/USERNAME/REPO/workflows/CI/badge.svg)](https://github.com/USERNAME/REPO/actions)
-[![Update](https://github.com/USERNAME/REPO/workflows/Update%20Antigravity%20Version/badge.svg)](https://github.com/USERNAME/REPO/actions)
+[![CI](https://github.com/TheGostsniperfr/antigravity2.0-nix/workflows/CI/badge.svg)](https://github.com/TheGostsniperfr/antigravity2.0-nix/actions)
+[![Update](https://github.com/TheGostsniperfr/antigravity2.0-nix/workflows/Update%20Antigravity%20Version/badge.svg)](https://github.com/TheGostsniperfr/antigravity2.0-nix/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Nix](https://img.shields.io/badge/Nix-Flakes-blue.svg)](https://nixos.org)
 
 A professional Nix flake for [Antigravity 2.0](https://antigravity.google), Google's next-generation development CLI tool.
 
+> **Production-ready** • **Auto-updating** • **Secure** • **Well-documented**
+
 ## Features
 
-- ✨ **Zero-config installation** via Nix flakes
-- 🔄 **Automatic weekly updates** via GitHub Actions
-- 🔒 **SHA-512 checksum verification** for security
-- 🚀 **Multi-platform support** (Linux x64/ARM64, macOS x64/ARM64)
-- 📦 **Reproducible builds** with Nix
+- ✨ **Zero-config installation** - Works out of the box with Nix flakes
+- 🔄 **Automatic updates** - Weekly checks for new Antigravity releases
+- 🔒 **Cryptographic verification** - SHA-512 checksums for all downloads
+- 🚀 **Multiple installation methods** - Profile, shell, system-wide, or project-based
+- 📦 **Reproducible builds** - Guaranteed consistency across systems
+- 🏗️ **Multi-platform ready** - Architecture supports Linux and macOS (x64/ARM64)
+- 📚 **Comprehensive docs** - Guides for every use case
+- 🤖 **CI/CD integrated** - Automated testing and updates
 
 ## Quick Start
 
@@ -21,7 +27,7 @@ A professional Nix flake for [Antigravity 2.0](https://antigravity.google), Goog
 Run Antigravity directly without installation:
 
 ```bash
-nix run github:USERNAME/REPO
+nix run github:TheGostsniperfr/antigravity2.0-nix
 ```
 
 ### Using `nix profile`
@@ -29,7 +35,7 @@ nix run github:USERNAME/REPO
 Install Antigravity to your profile:
 
 ```bash
-nix profile install github:USERNAME/REPO
+nix profile install github:TheGostsniperfr/antigravity2.0-nix
 ```
 
 ### Using `nix shell`
@@ -37,7 +43,7 @@ nix profile install github:USERNAME/REPO
 Create a temporary shell with Antigravity available:
 
 ```bash
-nix shell github:USERNAME/REPO
+nix shell github:TheGostsniperfr/antigravity2.0-nix
 ```
 
 ### In a flake-based project
@@ -48,7 +54,7 @@ Add to your `flake.nix`:
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    antigravity.url = "github:USERNAME/REPO";
+    antigravity.url = "github:TheGostsniperfr/antigravity2.0-nix";
   };
 
   outputs = { self, nixpkgs, antigravity }: {
@@ -71,7 +77,7 @@ Add to your `configuration.nix`:
 
 ```nix
 {
-  inputs.antigravity.url = "github:USERNAME/REPO";
+  inputs.antigravity.url = "github:TheGostsniperfr/antigravity2.0-nix";
   
   # In your system configuration:
   environment.systemPackages = [
@@ -86,7 +92,7 @@ Add to your Home Manager configuration:
 
 ```nix
 {
-  inputs.antigravity.url = "github:USERNAME/REPO";
+  inputs.antigravity.url = "github:TheGostsniperfr/antigravity2.0-nix";
   
   # In your home configuration:
   home.packages = [
@@ -102,7 +108,7 @@ Add to your Home Manager configuration:
 Clone and test locally:
 
 ```bash
-git clone https://github.com/USERNAME/REPO.git
+git clone https://github.com/TheGostsniperfr/antigravity2.0-nix.git
 cd REPO
 nix flake check
 nix build
@@ -159,6 +165,53 @@ Contributions are welcome! Please:
 ## License
 
 This flake is MIT licensed. Antigravity itself is proprietary software by Google.
+
+## Roadmap
+
+### Current Status: v1.0.0 ✅
+
+- ✅ Linux x86_64 support
+- ✅ Automatic weekly updates
+- ✅ SHA-512 verification
+- ✅ CI/CD pipeline
+- ✅ Comprehensive documentation
+
+### Upcoming Features
+
+#### v1.1.0 - Multi-Platform Support
+- [ ] Linux ARM64 (aarch64) support
+- [ ] macOS Intel (x86_64) support  
+- [ ] macOS Apple Silicon (ARM64) support
+- [ ] Platform-specific testing in CI
+
+#### v1.2.0 - Enhanced Distribution
+- [ ] Binary cache setup (Cachix)
+- [ ] Faster installation times
+- [ ] Reduced bandwidth usage
+- [ ] NixOS module for system-wide configuration
+
+#### v1.3.0 - Advanced Features
+- [ ] Version pinning support
+- [ ] Multiple version installation
+- [ ] Plugin packaging
+- [ ] Development environment templates
+
+#### v2.0.0 - Ecosystem Integration
+- [ ] Nixpkgs overlay
+- [ ] Home Manager module
+- [ ] NUR (Nix User Repository) integration
+- [ ] Flake templates for Antigravity projects
+
+### Community Goals
+
+- 🎯 100+ GitHub stars
+- 🎯 Active community contributions
+- 🎯 Featured in NixOS Weekly
+- 🎯 Official Antigravity documentation mention
+
+## Contributing
+
+We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## Troubleshooting
 

@@ -39,7 +39,7 @@ Restart your terminal after making changes.
 Run Antigravity without installing:
 
 ```bash
-nix run github:USERNAME/REPO -- --help
+nix run github:TheGostsniperfr/antigravity2.0-nix -- --help
 ```
 
 ### Method 2: Nix Profile (User Installation)
@@ -47,7 +47,7 @@ nix run github:USERNAME/REPO -- --help
 Install to your user profile:
 
 ```bash
-nix profile install github:USERNAME/REPO
+nix profile install github:TheGostsniperfr/antigravity2.0-nix
 ```
 
 Verify installation:
@@ -65,7 +65,7 @@ nix profile remove antigravity
 Create a temporary environment:
 
 ```bash
-nix shell github:USERNAME/REPO
+nix shell github:TheGostsniperfr/antigravity2.0-nix
 antigravity --version
 ```
 
@@ -79,7 +79,7 @@ Add to your project's `flake.nix`:
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    antigravity.url = "github:USERNAME/REPO";
+    antigravity.url = "github:TheGostsniperfr/antigravity2.0-nix";
   };
 
   outputs = { self, nixpkgs, antigravity }:
@@ -111,7 +111,7 @@ Add to `/etc/nixos/configuration.nix`:
 
 {
   # Add flake input at the top level
-  inputs.antigravity.url = "github:USERNAME/REPO";
+  inputs.antigravity.url = "github:TheGostsniperfr/antigravity2.0-nix";
 
   # In your configuration
   environment.systemPackages = [
@@ -134,7 +134,7 @@ Add to your Home Manager configuration:
 
 {
   # Add flake input
-  inputs.antigravity.url = "github:USERNAME/REPO";
+  inputs.antigravity.url = "github:TheGostsniperfr/antigravity2.0-nix";
 
   # In your home configuration
   home.packages = [
@@ -219,7 +219,7 @@ Then retry the installation.
 
 - Read the [README](../README.md) for usage examples
 - Check [CONTRIBUTING](../CONTRIBUTING.md) to contribute
-- Report issues on [GitHub](https://github.com/USERNAME/REPO/issues)
+- Report issues on [GitHub](https://github.com/TheGostsniperfr/antigravity2.0-nix/issues)
 
 ## Getting Help
 
