@@ -25,7 +25,7 @@ jobs:
             experimental-features = nix-command flakes
 
       - name: Check flake
-        run: NIXPKGS_ALLOW_UNFREE=1 nix flake check --impure
+        run: nix flake check
 
   build:
     name: Build Package
@@ -42,7 +42,7 @@ jobs:
             experimental-features = nix-command flakes
 
       - name: Build package
-        run: NIXPKGS_ALLOW_UNFREE=1 nix build --impure
+        run: nix build
 
       - name: Test binary
         run: |

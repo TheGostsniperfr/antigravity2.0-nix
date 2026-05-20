@@ -1,7 +1,7 @@
 # Antigravity 2.0 Nix Flake
 
-[![CI](https://github.com/YOUR_USERNAME/antigravity-flake/workflows/CI/badge.svg)](https://github.com/YOUR_USERNAME/antigravity-flake/actions)
-[![Update](https://github.com/YOUR_USERNAME/antigravity-flake/workflows/Update%20Antigravity%20Version/badge.svg)](https://github.com/YOUR_USERNAME/antigravity-flake/actions)
+[![CI](https://github.com/USERNAME/REPO/workflows/CI/badge.svg)](https://github.com/USERNAME/REPO/actions)
+[![Update](https://github.com/USERNAME/REPO/workflows/Update%20Antigravity%20Version/badge.svg)](https://github.com/USERNAME/REPO/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A professional Nix flake for [Antigravity 2.0](https://antigravity.google), Google's next-generation development CLI tool.
@@ -21,7 +21,7 @@ A professional Nix flake for [Antigravity 2.0](https://antigravity.google), Goog
 Run Antigravity directly without installation:
 
 ```bash
-nix run github:YOUR_USERNAME/antigravity-flake
+nix run github:USERNAME/REPO
 ```
 
 ### Using `nix profile`
@@ -29,7 +29,7 @@ nix run github:YOUR_USERNAME/antigravity-flake
 Install Antigravity to your profile:
 
 ```bash
-nix profile install github:YOUR_USERNAME/antigravity-flake
+nix profile install github:USERNAME/REPO
 ```
 
 ### Using `nix shell`
@@ -37,7 +37,7 @@ nix profile install github:YOUR_USERNAME/antigravity-flake
 Create a temporary shell with Antigravity available:
 
 ```bash
-nix shell github:YOUR_USERNAME/antigravity-flake
+nix shell github:USERNAME/REPO
 ```
 
 ### In a flake-based project
@@ -48,7 +48,7 @@ Add to your `flake.nix`:
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    antigravity.url = "github:YOUR_USERNAME/antigravity-flake";
+    antigravity.url = "github:USERNAME/REPO";
   };
 
   outputs = { self, nixpkgs, antigravity }: {
@@ -71,7 +71,7 @@ Add to your `configuration.nix`:
 
 ```nix
 {
-  inputs.antigravity.url = "github:YOUR_USERNAME/antigravity-flake";
+  inputs.antigravity.url = "github:USERNAME/REPO";
   
   # In your system configuration:
   environment.systemPackages = [
@@ -86,7 +86,7 @@ Add to your Home Manager configuration:
 
 ```nix
 {
-  inputs.antigravity.url = "github:YOUR_USERNAME/antigravity-flake";
+  inputs.antigravity.url = "github:USERNAME/REPO";
   
   # In your home configuration:
   home.packages = [
@@ -102,8 +102,8 @@ Add to your Home Manager configuration:
 Clone and test locally:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/antigravity-flake.git
-cd antigravity-flake
+git clone https://github.com/USERNAME/REPO.git
+cd REPO
 nix flake check
 nix build
 ./result/bin/antigravity --version
@@ -177,13 +177,3 @@ The flake uses `autoPatchelfHook` to fix dynamic linking. If you encounter issue
 
 Ensure GitHub Actions has write permissions in your repository settings:
 - Settings → Actions → General → Workflow permissions → Read and write permissions
-
-## Resources
-
-- [Antigravity Official Site](https://antigravity.google)
-- [Nix Flakes Documentation](https://nixos.wiki/wiki/Flakes)
-- [NixOS Manual](https://nixos.org/manual/nixos/stable/)
-
-## Acknowledgments
-
-Built with ❤️ for the Nix community.

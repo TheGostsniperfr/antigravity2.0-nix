@@ -22,7 +22,7 @@ Restart your terminal.
 Run Antigravity without installing:
 
 ```bash
-nix run github:YOUR_USERNAME/antigravity-flake -- --version
+nix run github:USERNAME/REPO -- --version
 ```
 
 ## Install
@@ -30,7 +30,7 @@ nix run github:YOUR_USERNAME/antigravity-flake -- --version
 Install to your user profile:
 
 ```bash
-nix profile install github:YOUR_USERNAME/antigravity-flake
+nix profile install github:USERNAME/REPO
 ```
 
 Verify:
@@ -78,5 +78,5 @@ nix profile remove antigravity
 
 ## Need Help?
 
-- [Open an issue](https://github.com/YOUR_USERNAME/antigravity-flake/issues)
+- [Open an issue](https://github.com/USERNAME/REPO/issues)
 - Check [Troubleshooting](docs/SETUP.md#troubleshooting)
