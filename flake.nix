@@ -28,14 +28,14 @@
         manifestUrl = "https://antigravity-cli-auto-updater-974169037036.us-central1.run.app/manifests/${platform}.json";
         
         # Version metadata (updated automatically by CI)
-        version = "1.0.0";
+        version = "1.4.4";
         
         # Platform-specific hashes (updated automatically by CI)
         hashes = {
-          "x86_64-linux" = "sha512-XM3MAfuGPH6OVkc8bJXbp1/tT9KiQiANgM/Ex/q4Ebcz9af6slMyEwqtKY5yYn4QGOaRGlZY9PBZ724BnyEZcg==";
-          "aarch64-linux" = "";  # Will be populated when available
-          "x86_64-darwin" = "";  # Will be populated when available
-          "aarch64-darwin" = ""; # Will be populated when available
+          "x86_64-linux" = "sha512-fOFJ01A0TBBGx7WbZlm8xdZZ81G/OgfGwIWIfZNCfOuJ2Sd1LkzNCES1P/uR0z1qSfcoNc6ydsfP/dE8+4AjuA==";
+          "aarch64-linux" = "sha512-e/xPfl4t2kzQxTbHLPlyXCkYoDgCitEfpPf15X23fp/31rm+ygXNhWGLd90+d95ktjYp0z5XefKRETkNxTx6rw==";
+          "x86_64-darwin" = "sha512-rskUF73jXmkNVa9OGuT/Yh/dZ9a2inqatQ67UGv5nWuKO0A5WjhaQvjPlxCd8i/rtn295cpJjnXLvKV6Da3JrA==";
+          "aarch64-darwin" = "sha512-zRLEYJuLRKqUwv5Q7tjziE8azlBlhGMMv/z/QosNVXuIPbDMX7nPzJJSiCnFGYV4KQcFkMFe1tZzrfGRbmCREQ==";
         };
         
         hash = hashes.${system} or (throw "No hash available for system: ${system}");
